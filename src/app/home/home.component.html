@@ -1,0 +1,14 @@
+<h1>This is Home Page</h1>
+
+<pre>{{arr1 | json}}</pre>
+
+<p *ngFor="let eachItem of arr1; let j = index">
+    {{j+1}}) {{eachItem}}
+</p>
+
+<button (click)="insertElement()">Insert</button>
+<button (click)="flagShowPara = !flagShowPara">Toggle</button>
+
+<p *ngIf="flagShowPara">
+    This is new Para
+</p>
